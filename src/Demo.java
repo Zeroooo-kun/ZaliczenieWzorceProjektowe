@@ -62,6 +62,7 @@ public class Demo {
             if (proceed.equalsIgnoreCase("P")) {
                 // Finally, strategy handles the payment.
                 if (strategy.pay(order.getTotalCost())) {
+                    Logger.getInstance().logToConsole(); // logger singleton
                     System.out.println("Payment has been successful.");
                 } else {
                     System.out.println("FAIL! Please, check your data.");
