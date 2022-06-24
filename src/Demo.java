@@ -70,7 +70,18 @@ public class Demo {
                     System.out.println("FAIL! Please, check your data.");
                 }
                 order.setClosed();
+                getUser();
             }
         }
+    }
+    public static void getUser (){
+        User1 user1= new User1();
+        User2 user2= new User2();
+
+        Subject subject=new Subject();
+        subject.addObserver(user1);
+        subject.addObserver(user2);
+        subject.startWork();
+
     }
 }

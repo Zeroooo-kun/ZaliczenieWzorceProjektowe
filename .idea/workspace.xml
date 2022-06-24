@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51c14a9f-17fe-46dc-9910-9593213e77d2" name="Changes" comment="Added type Singleton&#10;file: Logger">
-      <change afterPath="$PROJECT_DIR$/src/Proxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceImpl.java" afterDir="false" />
+    <list default="true" id="51c14a9f-17fe-46dc-9910-9593213e77d2" name="Changes" comment="Added type Proxy/Pełnomocnik &#10;file: Proxy,Service1, ServiceImpl&#10;in Demo added: &#10;                Service1 service1= new Proxy();&#10;                service1.method();">
+      <change afterPath="$PROJECT_DIR$/src/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +30,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/CreditCard.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Demo.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Main.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Order.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/PayByCreditCard.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/PayByPayPal.java" root0="FORCE_HIGHLIGHTING" />
@@ -91,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656113432782</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added type Proxy/Pełnomocnik &#10;file: Proxy,Service1, ServiceImpl&#10;in Demo added: &#10;                Service1 service1= new Proxy();&#10;                service1.method();">
+      <created>1656113910602</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656113910602</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +120,7 @@
     <MESSAGE value="Added type Strategy&#10;include file: Demo, CreditCard, PayByPayPal, PayByCreditCard,PayStrategy,Order" />
     <MESSAGE value="Deleted" />
     <MESSAGE value="Added type Singleton&#10;file: Logger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added type Singleton&#10;file: Logger" />
+    <MESSAGE value="Added type Proxy/Pełnomocnik &#10;file: Proxy,Service1, ServiceImpl&#10;in Demo added: &#10;                Service1 service1= new Proxy();&#10;                service1.method();" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added type Proxy/Pełnomocnik &#10;file: Proxy,Service1, ServiceImpl&#10;in Demo added: &#10;                Service1 service1= new Proxy();&#10;                service1.method();" />
   </component>
 </project>
