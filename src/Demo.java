@@ -23,6 +23,8 @@ public class Demo {
 
             String continueChoice;
             do {
+                Service1 service1= new Proxy();
+                service1.method();
                 System.out.print("Please, select a product:" + "\n" +
                         "1 - Mother board" + "\n" +
                         "2 - CPU" + "\n" +
