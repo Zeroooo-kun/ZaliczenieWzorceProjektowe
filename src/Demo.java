@@ -72,7 +72,7 @@ public class Demo {
                 // Strategia obsługuje płatność
                 if (strategy.pay(order.getTotalCost())) {
                     Logger.getInstance().logToConsole(); // logger singleton
-                    System.out.println("Payment has been successful.");
+                    System.out.println("Payment has been started. Please few seconds for confirmation.");
                 } else {
                     System.out.println("FAIL! Please, check your data once again. If there is still a problem, please contact our customer service.");
                 }

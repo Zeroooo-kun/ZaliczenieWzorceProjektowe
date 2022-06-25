@@ -7,7 +7,7 @@ public class Logger {
     }
 
     public void logToConsole(){ //nie jest statyczny
-        System.out.println("Wait a moment we have to confirm your order");
+        System.out.println("Wait a moment we have to confirm your order.");
 
     }
     private static class SingletonHolder{

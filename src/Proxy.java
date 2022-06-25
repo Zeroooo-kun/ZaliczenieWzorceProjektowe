@@ -7,7 +7,7 @@ public class Proxy implements Service1 {
         if (service1 == null)
             service1 = new ServiceImpl();
         service1.method();
-        System.out.println("Feel free to add as many goods as you want");
+        System.out.println("Feel free to add as many goods as you want.");
     }
 }
 

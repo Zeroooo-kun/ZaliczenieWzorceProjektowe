@@ -21,7 +21,7 @@ public class PayByCreditCard implements PayStrategy{
             String cvv = READER.readLine();
             card = new CreditCard(number, date, cvv);
 
-            // Validate credit card number...
+            // Sprawdzanie numeru karty
 
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -34,7 +34,7 @@ public class PayByCreditCard implements PayStrategy{
     @Override
     public boolean pay(int paymentAmount) {
         if (cardIsPresent()) {
-            System.out.println("Paying " + paymentAmount + " using Credit Card.");
+            System.out.println("You chose to pay " + paymentAmount + " using Credit Card.");
             card.setAmount(card.getAmount() - paymentAmount);
             return true;
         } else {

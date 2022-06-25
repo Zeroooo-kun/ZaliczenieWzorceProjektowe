@@ -6,7 +6,6 @@ public class Order {
         strategy.collectPaymentDetails();
         //Zbieramy i przechowujemy dane ze strategii
     }
-
     public void setTotalCost(int cost) {
         this.totalCost += cost;
     }

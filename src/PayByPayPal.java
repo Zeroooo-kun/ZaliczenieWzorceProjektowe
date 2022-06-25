@@ -53,7 +53,7 @@ public class PayByPayPal implements PayStrategy{
     @Override
     public boolean pay(int paymentAmount) {
         if (signedIn) {
-            System.out.println("Paying " + paymentAmount + " using PayPal.");
+            System.out.println("You chose to pay " + paymentAmount + " using PayPal.");
             return true;
         } else {
             return false;
