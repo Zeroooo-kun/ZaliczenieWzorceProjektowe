@@ -11,12 +11,15 @@ public class Demo {
     private static PayStrategy strategy;
 
     static {
-        priceOnProducts.put(1, 2200);
-        priceOnProducts.put(2, 1850);
-        priceOnProducts.put(3, 1100);
-        priceOnProducts.put(4, 890);
+        priceOnProducts.put(1, 3);
+        priceOnProducts.put(2, 2);
+        priceOnProducts.put(3, 4);
+        priceOnProducts.put(4, 15);
         priceOnProducts.put(5, 10);
-        priceOnProducts.put(6, 20);
+        priceOnProducts.put(6, 16);
+        priceOnProducts.put(7, 20);
+        priceOnProducts.put(8, 25);
+
     }
 
     public static void main(String[] args) throws IOException {
@@ -28,12 +31,14 @@ public class Demo {
             String continueChoice;
             do {
                 System.out.print("Please, select a product which you want to buy:" + "\n" +
-                        "1 - Mother board" + "\n" +
-                        "2 - CPU" + "\n" +
-                        "3 - HDD" + "\n" +
-                        "4 - Memory" + "\n"+
-                        "5 - CD" + "\n"+
-                        "6 - DVD" + "\n");
+                        "1 - Banana" + "\n" +
+                        "2 - Apple" + "\n" +
+                        "3 - Orange" + "\n" +
+                        "4 - Mango" + "\n"+
+                        "5 - Watermelon" + "\n"+
+                        "6 - Melon" + "\n"+
+                        "7 - Passion fruit" + "\n"+
+                        "8 - Jackfruit" + "\n");
                 int choice = Integer.parseInt(reader.readLine());
                 cost = priceOnProducts.get(choice);
                 System.out.print("Please enter how many you want to buy: ");
@@ -48,9 +53,8 @@ public class Demo {
                         "1 - PalPay" + "\n" +
                         "2 - Credit Card");
                 String paymentMethod = reader.readLine();
-
-                // Client creates different strategies based on input from user,
-                // application configuration, etc.
+                // Klient tworzy różne strategie na podstawie danych wejściowych użytkownika
+                // Konfiguracja aplikacji
                 if (paymentMethod.equals("1")) {
                     strategy = new PayByPayPal();
                 } else {
@@ -58,15 +62,14 @@ public class Demo {
                 }
             }
 
-            // Order object delegates gathering payment data to strategy object,
-            // since only strategies know what data they need to process a
-            // payment.
+            //Delegaci obiektu zamówienia gromadzą dane płatnicze do obiektu strategii,
+            //ponieważ tylko strategie wiedzą, jakich danych potrzebują do przetworzenia płatności.
             order.processOrder(strategy);
 
             System.out.print("Pay " + order.getTotalCost() + " units or Continue shopping?- P/C (Enter 'P' to Pay or 'C' to Continue): ");
             String proceed = reader.readLine();
             if (proceed.equalsIgnoreCase("P")) {
-                // Finally, strategy handles the payment.
+                // Strategia obsługuje płatność
                 if (strategy.pay(order.getTotalCost())) {
                     Logger.getInstance().logToConsole(); // logger singleton
                     System.out.println("Payment has been successful.");

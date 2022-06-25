@@ -7,9 +7,9 @@ public class PayByCreditCard implements PayStrategy{
     private final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
     private CreditCard card;
 
-    /**
-     * Collect credit card data.
-     */
+
+     //Zebranie danych z karty
+
     @Override
     public void collectPaymentDetails() {
         try {
@@ -28,9 +28,9 @@ public class PayByCreditCard implements PayStrategy{
         }
     }
 
-    /**
-     * After card validation we can charge customer's credit card.
-     */
+
+      //Po zatwierdzeniu karty możemy zmienić karte klienta
+
     @Override
     public boolean pay(int paymentAmount) {
         if (cardIsPresent()) {

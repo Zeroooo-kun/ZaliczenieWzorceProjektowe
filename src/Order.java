@@ -4,7 +4,7 @@ public class Order {
 
     public void processOrder(PayStrategy strategy) {
         strategy.collectPaymentDetails();
-        // Here we could collect and store payment data from the strategy.
+        //Zbieramy i przechowujemy dane ze strategii
     }
 
     public void setTotalCost(int cost) {
