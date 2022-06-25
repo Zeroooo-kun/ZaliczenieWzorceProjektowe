@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51c14a9f-17fe-46dc-9910-9593213e77d2" name="Changes" comment="Changed text's language">
+    <list default="true" id="51c14a9f-17fe-46dc-9910-9593213e77d2" name="Changes" comment="improvement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZaliczenieWzorceProjektowe/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZaliczenieWzorceProjektowe/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZaliczenieWzorceProjektowe/Logger$SingletonHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZaliczenieWzorceProjektowe/Logger$SingletonHolder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ZaliczenieWzorceProjektowe/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZaliczenieWzorceProjektowe/Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PayByCreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PayByCreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PayByPayPal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PayByPayPal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZaliczenieWzorceProjektowe/Proxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZaliczenieWzorceProjektowe/Proxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZaliczenieWzorceProjektowe/User2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZaliczenieWzorceProjektowe/User2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Proxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656119576858</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="improvement">
+      <created>1656120395808</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1656120395808</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +162,7 @@
     <MESSAGE value="Added type Observer&#10;file: Observer, Subject, User1, User2&#10;in Demo added: &#10;    getUser();&#10;    &#10;    public static void getUser (){&#10;        User1 user1= new User1();&#10;        User2 user2= new User2();&#10;&#10;        Subject subject=new Subject();&#10;        subject.addObserver(user1);&#10;        subject.addObserver(user2);&#10;        subject.startWork();&#10;&#10;    }" />
     <MESSAGE value="Changed of text part1" />
     <MESSAGE value="Changed text's language" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed text's language" />
+    <MESSAGE value="improvement" />
+    <option name="LAST_COMMIT_MESSAGE" value="improvement" />
   </component>
 </project>
