@@ -13,8 +13,11 @@ public class PayByPayPal implements PayStrategy{
     private boolean signedIn;
 
     static {
-        DATA_BASE.put("amanda1985", "amanda@ya.com");
-        DATA_BASE.put("qwerty", "john@amazon.eu");
+        DATA_BASE.put("123456789", "amane@wp.pl");
+        DATA_BASE.put("reya2022", "reya@ya.com");
+        DATA_BASE.put("adamokrasa", "adam21@it.com");
+        DATA_BASE.put("konrad", "konrad@onet.pl");
+        DATA_BASE.put("artur1997", "artur1997@op.pl");
     }
 
     /**
@@ -31,7 +34,7 @@ public class PayByPayPal implements PayStrategy{
                 if (verify()) {
                     System.out.println("Data verification has been successful.");
                 } else {
-                    System.out.println("Wrong email or password!");
+                    System.out.println("Wrong email or password! Please, check your data one more time!");
                 }
             }
         } catch (IOException ex) {
